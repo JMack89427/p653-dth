@@ -628,7 +628,7 @@ def getMIN_DELAY() {
   "800"
 } // Minimum delay between commands to device (configured)
 def getVERSION() {
-  "Ver 3.02"
+  "Ver 3.03"
 } // Keep track of handler version
 def getPOOL_SPA_SCHED_PARAM() {
   21
