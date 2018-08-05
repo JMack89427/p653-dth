@@ -783,7 +783,8 @@ private List setSpaSetpointInternal(Double degrees) {
 
 // Ask the controller for the water temperature
 private List getWaterTemp() {
-  log.debug "getWaterTemp()" [zwave.sensorMultilevelV1.sensorMultilevelGet()]
+    log.debug "getWaterTemp()"
+    [zwave.sensorMultilevelV1.sensorMultilevelGet()]
 }
 
 //Reports
@@ -1840,7 +1841,7 @@ def List quickSetPool(degrees) {
   delayBetweenLog(addRefreshCmds(setPoolSetpointInternal("${degrees}".toDouble())))
 }
 def List quickGetWaterTemp() {
-  delayBetweenLog(addRefreshCmds(getTestCmds()))
+  delayBetweenLog(addRefreshCmds(getWaterTemp()))
 }
 
 
